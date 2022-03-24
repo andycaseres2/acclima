@@ -1,5 +1,27 @@
 .App {
   text-align: center;
+  background-color: crimson;
+  height: 100vh;
+}
+.rain {
+  background-image: url("./images/rain.jpeg");
+  background-size: cover;
+  transition: 0.4s ease-out;
+  background-position: 50%;
+}
+
+.clear {
+  background-image: url("./images/clear.jpeg");
+  background-size: cover;
+  transition: 0.4s ease-out;
+  background-position: 50%;
+}
+
+.clouds {
+  background-image: url("./images/clouds.jpeg");
+  background-size: cover;
+  transition: 0.4s ease-out;
+  background-position: 50%;
 }
 
 .App-logo {

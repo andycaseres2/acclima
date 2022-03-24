@@ -5,9 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(54, 54, 221);
 }
 
+.img {
+  width: 200px;
+  margin-top: 20px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -24,7 +27,8 @@ code {
   padding: 15px;
   border-radius: 10px;
   width: 200px;
-  margin-bottom: 30px;
+  position: relative;
+  bottom: 20px;
 }
 
 .container-location .location {

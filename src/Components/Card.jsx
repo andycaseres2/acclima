@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { datecity } from "./datecity";
 import { API_URL, API_KEY } from "../services/setting";
+import logo from "../images/Andy.png";
 
 const Card = () => {
   const [query, setquery] = useState("");
@@ -19,8 +20,24 @@ const Card = () => {
   };
 
   return (
-    <div>
-      <h1 className="title">AcClima</h1>
+    <div
+      className={
+        typeof weather.main != "undefined"
+          ? weather.weather[0].main === "Clouds"
+            ? "App clouds"
+            : "App"
+            ? weather.weather[0].main === "Clear"
+              ? "App clear"
+              : "App"
+              ? weather.weather[0].main === "Rain"
+                ? "App rain"
+                : "App"
+              : "App"
+            : "App"
+          : "App"
+      }
+    >
+      <img className="img" src={logo} alt="Andy Caseres" />
       <main>
         <div>
           <input
