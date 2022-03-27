@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { datecity } from './datecity'
 import { API_URL, API_KEY } from '../services/setting'
-import logo from '../images/Andy.png'
+import logo from '../images/andy.png'
 
 const Card = () => {
   const [query, setquery] = useState('')
